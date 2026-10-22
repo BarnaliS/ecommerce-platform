@@ -6,10 +6,11 @@ A microservices-based E-Commerce Platform built to demonstrate backend engineeri
 
 | Service | Responsibility | Repository |
 |---|---|---|
-| Product Catalog | Product information and catalog management | [productcatalog](../productcatalog) |
-| Authentication | User authentication and authorization | [auth](../auth) |
-| Payment | Payment processing | [payment](../payment) |
-| Service Discovery | Service registration and discovery | [servicediscovery](../servicediscovery) |
+| Product Catalog | Product information and catalog management | [productcatalog](https://github.com/BarnaliS/ProductCatalogService) |
+| Authentication | User authentication and authorization | [auth](https://github.com/BarnaliS/UserAuthenticationService) |
+| Payment | Payment processing | [payment](https://github.com/BarnaliS/PaymentService) |
+| Service Discovery | Service registration and discovery | [servicediscovery](https://github.com/BarnaliS/ServiceDiscovery) |
+| Notification Service | Notification Service | [NotificationService](https://github.com/BarnaliS/NotificationService) |
 
 ## Architecture Overview
 
@@ -18,13 +19,13 @@ The platform is divided into independently maintained services. Each service has
 ```text
                   E-Commerce Platform
                           |
-          +---------------+---------------+
-          |               |               |
-    Product Catalog  Authentication    Payment
-          |               |               |
-          +---------------+---------------+
-                          |
-                 Service Discovery
+          +---------------+---------------+----------------+
+          |               |               |                |
+    Product Catalog  Authentication    Payment       Notification Service  
+          |               |               |                |
+          +---------------+---------------+----------------+
+                                  |
+                         Service Discovery
 ```
 
 ## Technology Stack
